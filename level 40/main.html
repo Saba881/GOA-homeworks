@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+
+    <h1 id="header1">Header h1</h1>
+    <h2 id="header2">Header h2</h2>
+    <h3 id="header3">Header h3</h3>
+
+    <script>
+        document.getElementById("header1").textContent = "New Header h1";
+        document.getElementById("header2").textContent = "New Header h2";
+        document.getElementById("header3").textContent = "New Header h3";
+
+        let newDiv = document.createElement("div");
+        newDiv.textContent = "This is a new div element.";
+        console.log(newDiv);
+
+        let emptyH1 = document.createElement("h1");
+        let emptyP = document.createElement("p");
+
+        emptyH1.textContent = "This is an empty header h1";
+        emptyP.textContent = "This is an empty paragraph p";
+
+        document.body.appendChild(emptyH1);
+        document.body.appendChild(emptyP);
+    </script>
+
+</body>
+</html>
